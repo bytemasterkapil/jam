@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block body %}
+<br>
+
+<h4 style="text-align:center; color:white;">login form</h4>
+{% if msg  %}
+<p style="text-align:center">{{msg}}</p>
+
+{% endif %}
+
+<div style="width:60%; margin:0 auto;">
+    <form action="{% url 'validate' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Enter User Id</label>
+            <input type="text" name="userid" required="True" class="form-control">
+
+        </div>
+         <div class="form-group">
+            <label>Enter Your Password</label>
+            <input type="text" name="password" required="True" class="form-control">
+
+        </div>
+
+         <div class="form-group">
+            <label>Select user type</label>
+            <select class="form-control" name="usertype">
+
+                <option value="">--select--</option>
+                 <option value="jobseeker">Job Seeker</option>
+                 <option value="employer">Employer</option>
+                 <option value="admin">Administration</option>
+            </select>
+
+        </div>
+        <br>
+        <input type="submit" value="login" class="btn" style="background-color:#F46818; color: white;" >
+
+    </form><!--end of form-->
+
+<br>
+
+
+</div><!--this end of div-->
+
+
+{% endblock body %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<br>
+<h3 style="">Employer Registration </h3>
+
+<a href="{% url 'employerreg' %}" style="color:#F46818;">For employer</a>
+<br>
+<h3 style="">Jobseeker Registration</h3>
+
+<a href="{% url 'jobseekerreg' %}" style="color:#F46818;">For jobseeker</a>
+<br>
+{% endblock body %}

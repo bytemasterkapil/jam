@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h4 style="background-color: white; text-align:center;">Jobseeker Registration form</h4>
+
+{% if msg  %}
+<p style="text-align:center">{{msg}}</p>
+
+{% endif %}
+<div style="width:60% margin:0 auto;">
+
+    <form action="{% url 'jsreg' %}" method="post">
+        {% csrf_token %}
+
+
+
+        <div class="form-group ">
+            <label>
+                Enter your Name:
+            </label>
+            <input type="name" class="form-control" name="name" required="True">
+
+        </div>
+        <div class="form-group">
+            <label>Select Your gender:</label>
+            <br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </div>
+        <div class="form-group">
+            <label>Enter your Address:</label>
+            <br>
+            <textarea name="address" class="form-control"></textarea>
+
+        </div>
+        <div class="form-group">
+            <label>Enter Contact Number</label>
+            <input type="number" name="contactno" class="form-control" required="True">
+
+        </div>
+        <div class="form-group">
+            <label>Enter Email Address</label>
+            <input type="email" name="emailaddress" class="form-control" required="True">
+        </div>
+
+        <div class="form-group">
+            <label>Enter DOB</label>
+            <input type="date" name="dob" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <label>Select Qualification</label>
+            <select name="qualification" form-control>
+                <option>--Select--</option>
+                <option>Diploma</option>
+                <option>B.tech</option>
+                <option>B.C.A</option>
+                <option>m.tech</option>
+                <option>M.C.A</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+
+            <label>Select Experience</label>
+            <select name="experience" form-control>
+                <option>--Select--</option>
+                <option>0 year</option>
+                <option>1 year</option>
+                <option>2 year</option>
+                <option>3 year</option>
+                <option>4 year</option>
+                <option>5 year</option>
+                <option>more than 5 year</option>
+
+            </select>
+
+
+        </div>
+
+        <div class="form-group">
+            <label>Enter Keyskills</label>
+            <textarea name="keyskills" class="form-control"></textarea>
+
+        </div>
+        <div class="form-group">
+            <label>Enter Password</label>
+            <input type="password" name="password" required="True" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <br>
+            <input type="submit" value="register" class="btn" style="background-color:#F46818; color: white;">
+        </div>
+
+
+
+
+
+
+
+
+
+    </form>
+
+</div>
+
+{% endblock body %}

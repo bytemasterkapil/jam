@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<link>
+    <meta charset="UTF-8">
+    <title>Job At Mail</title>
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'vender/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'vender/font-awesome/font-awesome.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <link rel="icon" href="{% static 'images/logo2.png'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+</head>
+<body>
+<div class="container-fluid ">
+  <div class="row border border-dash">
+            <div class="col-sm-4 "><span class="fa fa-phone" style="font-size:24px"></span>&nbsp;Call Us:&nbsp; <a href="tel:+91-962705678"
+                onclick="ga('send', 'event', 'Call ', 'click', 'JAM');">+91- 9627045679</a>
+            </div>
+
+            <div class="col-sm-4 "><span class="fa fa-envelope" style="font-size:24px"></span>&nbsp;Mail:&nbsp;<a href="mailto:jam002@gmail.com"
+                onclick="ga('send', 'event', 'Email', 'click', 'JAM');">jam002@gmail.com</a>
+            </div>
+      <div class="col-sm-4">
+          <ul class="s-icon">
+                <li>
+                    <a href="https://www.facebook.com/login/" target="_blank"> <i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+
+            </ul>
+
+
+      </div>
+
+
+
+  </div><!--end of row-->
+    <div class="row ">
+
+    <div class="col-sm-2 p-0">
+      <img src="{% static 'images/logo2.png'%}" width="50%">
+
+
+    </div>
+    <div class="col-sm-6">
+      <h1>Job at mail</h1>
+      <p>Job At Your Doorsteps</p>
+    </div>
+         <div class="col-sm-4">
+             <div class="b"><b>Toll Free Helpline: <a href="tel:+91-7800145678"
+                onclick="ga('send', 'event', 'Call ', 'click', 'JAM');">+91- 7800345656</a></b></div>
+             <div class="b"><b>Tue- Sun 8.00 AM TO 8.00PM</b></div>
+         </div>
+
+
+  </div><!--end of row-->
+    <div class="row border border-dark border-2">
+        <div class="col-sm-1 job ">Job Fair</div>
+        <div class="col-sm-11">
+            <marquee onmouseover="stop()" onmouseout="start()"<li><a style="color: green;">STATISTICS OF MICRO AND MEGA JOB FAIRS-June 2021 to 06.08.2022- Mega JOB FAIRS CONDUCTED-65 , EMPLOYERS PARTICIPATED- 9042 , JOB SEEKERS ATTENDED- 4,58,246 , JOB SEEKERS PLACED- 78,909. MICRO JOB FAIRS CONDUCTED -741 , EMPLOYERS PARTICIPATED- 5945 , JOB SEEKERS ATTENDED- 73,126 , JOB SEEKERS PLACED- 18,822. </a></li></marquee>
+
+        </div>
+
+    </div><!--end of row -->
+
+     <!--create nav bar-->
+  <div class="row" style="background-color:#F46818;">
+    <div class="col-sm-12 p-0">
+
+      <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color:#3B5FB4;">JAM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}" target="_blank" style="color:#3B5FB4;">Home</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}" target="_blank" style="color:#3B5FB4;">About Us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color:#3B5FB4;" href=" " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Registration
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'jobseekerreg' %}" target="_blank" style="color:#3B5FB4;">Jobseeker Registration</a></li>
+            <li><a class="dropdown-item" href="{% url 'employerreg' %}" target="_blank" style="color:#3B5FB4;">Employer Registration</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}" target="_blank" style="color:#3B5FB4;">Login</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}" target="_blank" style="color:#3B5FB4;">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </div><!--end of row-->
+        <!--make slider-->
+  <div class="row mt-2">
+
+  <div class="col-sm-10 p-0">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{%static 'images/s21.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F46818;">We Can Help You Grow</h5>
+        <p style="color:#F46818;">Work With Us And Stop Unemployment.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{%static 'images/s3.png'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5  style="color:#F46818;">We Make The Change</h5>
+        <p  style="color:#F46818;">
+          Connecting The Best Employees With The Best Companies.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{%static 'images/s1.png'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F46818;">Providing Efficient Employees</h5>
+        <p style="color:#F46818;">Growing A Business Means Having The Right People In Your Team.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{%static 'images/s22.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F46818;">Join, Work And Succeed</h5>
+        <p style="color:#F46818;">No Job, No Money? Get The Job, Get The Money. Send Your Resume Today.</p>
+      </div>
+    </div>
+   sss
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </div>
+
+    <div class="col-sm-2" style="background-color:#F46818;">
+                  <h4 style="color:"><b><u>What's New</u></b></h4>
+
+      <marquee onmouseover="stop()" onmouseout="start()" direction="up" height="300px">
+        <div class="vmarquee">
+          <ul id="NewsMarquee" class="marqueeNews">
+              <li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('163','<a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Career Skills Training by TCS iON&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/TCSionpopup.aspx&apos;);'> Career Skills Training by TCS iON</a>','What\'s New')"><a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Career Skills Training by TCS iON&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/TCSionpopup.aspx&apos;);'> Career Skills Training by TCS iON</a></a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('212','TCS iON Career Skills Course','What\'s New')">TCS iON Career Skills Course</a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('195','<a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Microsoft Digisaksham&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/MCT_Digisaksham.aspx&apos;);' >&quot;Digisaksham&quot; Job skills training by Microsoft </a>','What\'s New')"><a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Microsoft Digisaksham&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/MCT_Digisaksham.aspx&apos;);' >&quot;Digisaksham&quot; Job skills training by Microsoft </a></a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('209','e-Book of NCS launched as part of Azadi ka Amrit Mahotsav','What\'s New')">e-Book of NCS launched as part of Azadi ka Amrit Mahotsav</a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('161','<a class='whatsNew' href='https://www.ncs.gov.in/_layouts/15/ncsp/successstories.aspx'>Success Story Repository​</a>','What\'s New')"><a class='whatsNew' href='https://www.ncs.gov.in/_layouts/15/ncsp/successstories.aspx'>Success Story Repository​</a></a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('185','<a class='whatsNew' href='/_layouts/15/NCSP/successstoryvideos.aspx' target='_blank'>NCS / Success Story Videos</a>','What\'s New')"><a class='whatsNew' href='/_layouts/15/NCSP/successstoryvideos.aspx' target='_blank'>NCS / Success Story Videos</a></a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('84','Success Stories','What\'s New')">Success Stories</a></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('179','<a class='whatsNew ncs-click-log' vl-source='Whats New' vl-category='Public Disclosure of RA' href='/Pages/RecruitmentAgencies.aspx'><div class='empatt'>Employers Kind Attention</div>Public disclosure of marks of Recruitment Agencies</a>','What\'s New')"><a class='whatsNew ncs-click-log' vl-source='Whats New' vl-category='Public Disclosure of RA' href='/Pages/RecruitmentAgencies.aspx'><div class='empatt'>Employers Kind Attention</div>Public disclosure of marks of Recruitment Agencies</a></a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('158','Video Profile functionality for Jobseekers on NCS','What\'s New')">Video Profile functionality for Jobseekers on NCS</a><sup class="blink newText">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('128','Offline Application-Information Form for MHRD/AICTE Institutions','What\'s New')">Offline Application-Information Form for MHRD/AICTE Institutions</a></li>
+          </ul>
+      </div>
+      </marquee>
+    </div>
+
+  </div><!--end of row-->
+
+  <div class="row p-1">
+    <div class="col-sm-4 border" style="background-color:#FBF8F8;">
+
+      <div class=" text-center">
+          <br>
+          <h4 style="color:#F46818"><b><u>Notice Board</u></b></h4>
+        <marquee onmouseover="stop()" onmouseout="start()" direction="up">
+          <div class="vmarquee">
+            <ul id="NewsMarquee" class="marqueeNews">
+              <li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('163','<a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Career Skills Training by TCS iON&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/TCSionpopup.aspx&apos;);'> Career Skills Training by TCS iON</a>','What\'s New')"><a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Career Skills Training by TCS iON&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/TCSionpopup.aspx&apos;);'> Career Skills Training by TCS iON</a></a><sup class="blink newText" style="color:#F46818">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('212','TCS iON Career Skills Course','What\'s New')">TCS iON Career Skills Course</a><sup class="blink newText" style="color:#F46818">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('195','<a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Microsoft Digisaksham&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/MCT_Digisaksham.aspx&apos;);' >&quot;Digisaksham&quot; Job skills training by Microsoft </a>','What\'s New')"><a class='whatsNew' href='javascript:showNewsletterPopup(&apos;0&apos;,&apos;Microsoft Digisaksham&apos;,&apos;https://www.ncs.gov.in/_layouts/15/ncsp/MCT_Digisaksham.aspx&apos;);' >&quot;Digisaksham&quot; Job skills training by Microsoft </a></a><sup class="blink newText" style="color:#F46818">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('209','e-Book of NCS launched as part of Azadi ka Amrit Mahotsav','What\'s New')">e-Book of NCS launched as part of Azadi ka Amrit Mahotsav</a><sup class="blink newText" style="color:#F46818">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('161','<a class='whatsNew' href='https://www.ncs.gov.in/_layouts/15/ncsp/successstories.aspx'>Success Story Repository​</a>','What\'s New')"><a class='whatsNew' href='https://www.ncs.gov.in/_layouts/15/ncsp/successstories.aspx'>Success Story Repository​</a></a><sup class="blink newText" style="color:#F46818">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('185','<a class='whatsNew' href='/_layouts/15/NCSP/successstoryvideos.aspx' target='_blank'>NCS / Success Story Videos</a>','What\'s New')"><a class='whatsNew' href='/_layouts/15/NCSP/successstoryvideos.aspx' target='_blank'>NCS / Success Story Videos</a></a><sup class="blink newText" style="color:#F46818">New</sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('84','Success Stories','What\'s New')">Success Stories</a></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('179','<a class='whatsNew ncs-click-log' vl-source='Whats New' vl-category='Public Disclosure of RA' href='/Pages/RecruitmentAgencies.aspx'><div class='empatt'>Employers Kind Attention</div>Public disclosure of marks of Recruitment Agencies</a>','What\'s New')"><a class='whatsNew ncs-click-log' vl-source='Whats New' vl-category='Public Disclosure of RA' href='/Pages/RecruitmentAgencies.aspx'><div class='empatt'>Employers Kind Attention</div>Public disclosure of marks of Recruitment Agencies</a></a><sup class="blink newText"></sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('158','Video Profile functionality for Jobseekers on NCS','What\'s New')">Video Profile functionality for Jobseekers on NCS</a><sup class="blink newText"></sup></li><li><a href="javascript:void(0);" id="showModal" class="newsUpdateBlack" onclick="showPopup('128','Offline Application-Information Form for MHRD/AICTE Institutions','What\'s New')">Offline Application-Information Form for MHRD/AICTE Institutions</a></li>
+            </ul>
+        </div>
+        </marquee>
+      </div>
+
+    </div>
+    <div class="col-sm-8 "style="background:#6B709B;">
+         {% block body %}
+
+
+        {% endblock body %}
+
+
+    </div>
+
+  </div><!--end of row-->
+
+
+
+<div class="row" style="background-color:#2C292F;">
+    <div class="col-sm-12 p-0">
+        <footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="{% static 'images/logo2.png' %}">
+				<h3>Job<span>At Mail</span></h3>
+
+				<p class="footer-links">
+					<a href="{% url 'index' %}" target="_blank">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="{% url 'about' %}" target="_blank">About</a>
+					|
+					<a href="{% url 'contact' %}" target="_blank">Contact</a>
+				</p>
+
+			</div>
+
+			<div class="footer-center">
+				<div>
+                    <i class="fa fa-map-marker"></i> <p><span>Soft Pro Gudamba Thana Rd
+                    </span>
+						Lucknow- 226021</p>
+
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 9627007258</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@jobatmail.com">support@jobatmail</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About Us</span>
+					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/login/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/signup" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+                                <p style="background-color:#2C292F; color:#FFFFFF; text-align:center;">&copy;2022 JOBS All Right Reserved To Soft Pro Technology Lucknow</p>
+
+
+		</footer>
+
+    </div>
+
+</div><!--end of row-->
+
+</div><!--end of fluid -->
+</body>
+</html>
